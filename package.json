@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "exit 0",
+    "preversion": "npm t",
+    "postversion": "git push --follow-tags"
   },
   "keywords": [],
   "author": "",
