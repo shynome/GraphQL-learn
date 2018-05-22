@@ -1,10 +1,12 @@
 {
-  "name": "",
+  "name": "project_name",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "exit 0",
+    "predocker": "docker build . -t $npm_package_name:rc",
+    "docker": "docker run --rm -ti $npm_package_name:rc sh",
     "preversion": "npm t",
     "postversion": "git push --follow-tags"
   },
