@@ -2,7 +2,11 @@
   "name": "project_name",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "!*.spec.js"
+  ],
   "scripts": {
     "test": "exit 0",
     "predocker": "docker build . -t $npm_package_name:rc",
@@ -12,7 +16,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "MIT",
+  "license": "MPL-2.0",
   "devDependencies": {
     "@types/node": "^9.6.0"
   }
